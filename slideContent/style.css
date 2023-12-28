@@ -1,0 +1,100 @@
+*{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#img1 {
+    width: 971px;
+    height: 546px;
+    border-radius: 20px;
+    background-color: #D6D966;
+    padding: 10px;
+    
+}
+#img1 p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#img2 {
+    width: 971px;
+    height: 546px;
+    border-radius: 20px;
+    background-color: #F36767;
+    padding: 10px;
+}
+#img2 p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#img3 {
+    width: 971px;
+    height: 546px;
+    border-radius: 20px;
+    background-color: #AAAFE1;
+    padding: 10px;
+}
+#img3 p{
+    font-size: 20px;
+    font-weight: 500;
+}
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel_tracker {
+    overflow: hidden;
+}
+
+.carsoul_track_container {
+    list-style: none;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    width: 100%; /* Adjust if needed */
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.carousel-slide img {
+    
+    height: auto;
+    border-radius: 20px;
+}
+
+.btn-carousel {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color:transparent;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#btim1 {
+    left: 10px;
+    color: transparent;
+}
+
+#btim2{
+    right: 10px; 
+    
+}
+#img1, #img2, #img3 {
+    display: none;
+}
+
+#img1.active, #img2.active, #img3.active {
+    display: flex;
+}
